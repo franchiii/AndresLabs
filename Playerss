@@ -1,0 +1,20 @@
+class Player:
+    def __init__(self, name):
+        self._score = 0
+        self._name = name
+
+    def givePoint(self):
+        self._score += 1
+
+    def resetPoint(self):
+        self._score = 0
+
+    def getPlayerScore(self):
+        return self._score
+
+    def switchPlayer(self):
+        if self._name == "Player1":
+            self._name = "Player2"
+        elif self._name == "Player2":
+            self._name = "Player1"
+
