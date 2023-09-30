@@ -1,0 +1,27 @@
+import utime
+import random
+
+class SimonSays:
+    def __init__(self):
+       generateRealRandomNumber = "generaterealrandomnumber"
+       self._buttonOptions = ['Red', 'Green', 'Blue', 'Yellow']
+       self._currentPattern = []
+
+    def generateRealRandomNumber(self):
+        buttonOptions = ['Red', 'Green', 'Blue', 'Yellow']
+        ranNum = random.choice(buttonOptions)
+        # Replace this with a real random number that works and is new everytime..
+        return ranNum
+
+    def addRandomNumberToPattern(self):
+        # Add a random number to the pattern
+        random_number = self.generateRealRandomNumber()
+        self._currentPattern.append(random_number)
+        return self._currentPattern
+
+    def getCurrentPattern(self):
+        return self._currentPattern
+
+    def clearPattern(self):
+        # Clear the current pattern
+        self._currentPattern = []
